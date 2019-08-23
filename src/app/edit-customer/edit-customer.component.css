@@ -1,0 +1,14 @@
+.form-edit-customer {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-edit-customer {
+  width: 100%;
+}
+
+button {
+  width: 15%;
+  margin-right: 10px;
+  float: right;
+}

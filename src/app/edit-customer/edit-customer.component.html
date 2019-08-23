@@ -1,0 +1,24 @@
+<div *ngIf="customer">
+    <form [formGroup]="form">
+        <div class="form-edit-customer">
+            <h2 class="mat-h2">Atualização de usuários.</h2>
+            <mat-form-field appearance="outline">
+                <mat-label>Nome</mat-label>
+                <input formControlName="name" name="name" id="name" matInput [(ngModel)]="customer.name" placeholder="Nome">
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Idade</mat-label>
+                <input formControlName="age" name="age" id="age" matInput [(ngModel)]="customer.age" placeholder="Idade">
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Cidade</mat-label>
+                <input formControlName="city" name="city" id="city" matInput [(ngModel)]="customer.city" placeholder="Cidade">
+            </mat-form-field>
+
+        </div>
+        <button (click)="cancel()" mat-raised-button>Cancelar</button>
+        <button [disabled]="!form.valid" (click)="updatecustomer()" mat-raised-button color="primary">Salvar</button>
+    </form>
+</div>

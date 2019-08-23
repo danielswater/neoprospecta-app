@@ -1,0 +1,1 @@
+.img{width:100%;margin-bottom:18%}.container{min-height:100%;width:100%}.filter-input{display:flex;flex-direction:column}.filter-input>*{width:100%}.visible-desktop{display:block}.visible-mobile{display:none}@media (max-width: 767px){.visible-desktop{display:none}.visible-mobile{display:block}.tp-card{margin-bottom:20px}}
